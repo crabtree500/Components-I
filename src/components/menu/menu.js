@@ -47,4 +47,7 @@ function menuMaker(menuItems) {
     newitem.textContent = item; 
     mainlist.appendChild(newitem);
   });
+return mainmenu;
 }
+document.querySelector(".header").appendChild(menuMaker(menuItems));
+
