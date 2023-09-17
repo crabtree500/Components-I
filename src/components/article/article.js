@@ -148,7 +148,9 @@ function articleMaker({ title, date, firstParagraph, secondParagraph, thirdParag
   articleDiv.appendChild(paragraph2);
   articleDiv.appendChild(paragraph3);
   articleDiv.appendChild(expandButtonSpan);
+  return articleDiv
 }
+
 data.forEach( item => {
   const article = articleMaker(item);
   const newArticles = document.querySelector(".articles")
